@@ -1,0 +1,12 @@
+spring: 
+  redis: 
+    type: cluster  #cluster,sentinel,normal
+    password: xxxxxx
+    cluster: 
+      nodes: 192.168.0.37:6379,10.168.0.38:6379
+    sigle:
+      host: 192.168.0.39
+      port: 6379
+    sentinel:
+      master: mymaster
+      nodes: 192.168.0.40:6379
